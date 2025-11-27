@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown data-auto-animate>
+					<textarea data-template>
+						# Map Maker
+					</textarea>
+				</section>
+				<section data-markdown data-auto-animate>
+					<textarea data-template>
+						# Проблема
+					</textarea>
+				</section>
+				<section data-markdown data-auto-animate>
+					<textarea data-template>
+						# Проблема
+
+						Мастера настольных ролевых игр (D&D и других систем) часто тратят много времени на подготовку карт.
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						# Решение
+
+						Разработать сервис для быстрого и удобного создания карт - от поверхностных локаций до подземелий - в одном месте.
+					</textarea>
+				</section>
+				<section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							# Функционал
+						</textarea>
+
+						<br>
+						<a href="#/2/1" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+							- Рисование рельефов и структур подземелий
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+							- Рисование рельефов и структур подземелий
+							- Добавление объектов из пресетов
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+							- Рисование рельефов и структур подземелий
+							- Добавление объектов из пресетов
+							- Сохранение карты в PNG/PDF
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+							- Рисование рельефов и структур подземелий
+							- Добавление объектов из пресетов
+							- Сохранение карты в PNG/PDF
+							- Сохранение карты в аккаунте с возможностью возвращаться к редактированию
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Функционал
+
+							- Создание новой карты
+							- Рисование рельефов и структур подземелий
+							- Добавление объектов из пресетов
+							- Сохранение карты в PNG/PDF
+							- Сохранение карты в аккаунте с возможностью возвращаться к редактированию
+							- Встроенный музыкальный плеер для фонового сопровождения
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<textarea data-template>
+							# Макет
+						</textarea>
+
+						<br>
+						<a href="#/2/1" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<img src="img/hero.png" alt="hero">
+					</section>
+					<section>
+						<img src="img/Map%20Drawing.png" alt="hero">
+					</section>
+					<section>
+						<img src="img/Map%20Drawing%20-%20left%20menu.png" alt="hero">
+					</section>
+					<section>
+						<img src="img/Map%20Drawing%20-%20player.png" alt="hero">
+					</section>
+					<section>
+						<img src="img/Map%20Drawing%20-%20example.png" alt="hero">
+					</section>
+				</section>
+				<section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							## Пользовательские сценарии
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							### Пользовательские сценарии
+							#### Создание новой карты
+
+							1) Пользователь регистрируется.
+							2) Нажимает "Создать карту".
+							3) Рисует рельеф и структуру локации с помощью инструментов.
+							4) Добавляет объекты из библиотеки пресетов: двери, факелы, сундуки и т.д.
+							5) Экспортирует получившуюся карту как png или pdf.
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							### Пользовательские сценарии
+							#### Редактирование ранее созданной карты
+
+							1) Пользователь входит в существующий аккаунт.
+							2) Открывает раздел "Мои карты".
+							3) Выбирает нужную карту.
+							4) Вносит изменения: добавляет новые объекты, корректирует планировку.
+							5) Сохраняет изменения.
+						</textarea>
+					</section>
+					<section data-markdown data-auto-animate>
+						<textarea data-template>
+							### Пользовательские сценарии
+							#### Создание карты с атмосферой
+
+							1) Пользователь открывает редактор карты.
+							2) Открывает панель плеера.
+							3) Включает нужный трек с сервера.
+							4) Продолжает работу над картой с фоновой музыкой.
+						</textarea>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						# API
+
+						<a href="#/2/1" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+						</a>
+					</section>
+					<section>
+						<h2>Авторизация и аккаунты</h2>
+
+						<p><strong>POST /auth/register</strong> - регистрация пользователя. Тело: {email, password, username}</p>
+						<p><strong>POST /auth/login</strong> - вход в аккаунт (аутентификация). Тело: {email, password}</p>
+					</section>
+					<section>
+						<h2>Работа с картами</h2>
+
+						<p><strong>GET /maps</strong> - получение списка карт пользователя.</p>
+						<p><strong>GET /maps/{id}</strong> - получение данных конкретной карты.</p>
+						<p><strong>PUT /maps/{id}</strong> - обновить карту.</p>
+						<p><strong>DELETE /maps/{id}</strong> - удалить карту.</p>
+					</section>
+					<section>
+						<h2>Экспорт карт</h2>
+
+						<p><strong>POST /maps/{id}/export/png</strong> - сгенерировать PNG.</p>
+						<p><strong>POST /maps/{id}/export/pdf</strong> - сгенерировать PDF.</p>
+					</section>
+					<section>
+						<h2>Музыкальный плеер</h2>
+
+						<p><strong>GET /music</strong> - получить список треков.</p>
+						<p><strong>GET /music/{id}/stream</strong> - передача трека.</p>
+					</section>
+					<section>
+						<h2>Библиотека пресетов</h2>
+
+						<p><strong>GET /assets/objects</strong> - получить список доступных предметов.</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
